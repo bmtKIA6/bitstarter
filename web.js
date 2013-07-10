@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
     var index_html = fs.readFileSync("index.html");
     
-    response.send(index_html);
+    response.send(index_html.toStrin("utf-8"));
 });
   
 
