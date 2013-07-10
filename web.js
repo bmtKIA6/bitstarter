@@ -9,8 +9,6 @@ app.get('/', function(request, response) {
     response.send(index_html.toString("utf-8"));
 });
   
-
-
   
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
